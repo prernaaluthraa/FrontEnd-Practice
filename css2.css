@@ -1,0 +1,55 @@
+#container{
+	height: 100%;
+	border:1px ridge red;
+	width:750px;
+	margin: auto auto;
+}
+#header{
+	padding: 30px;
+	background:#00e500;
+}
+div#header p{
+	color: yellow;
+	font-size: 2em;
+	font-family: 
+}
+#navigation{
+	background:#008080;
+	padding: 15px;
+}
+div#menu ul li{
+ display: inline-block;
+ padding-right: 12px;
+
+}
+div#menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: roman;
+	font-size: 12px;
+}
+#banner{
+	height: 255px;
+	background:cyan;
+	background-image: url("chitkara.jpg");
+	background-size: 100% 100%;
+}
+#master{
+	height: 240px;
+	background-color: maroon
+}
+#leftbox, #rightbox{
+	width:50%;
+	height:100 
+
+	%;
+	float:left;
+
+}
+#leftbox{
+	background:hotpink;
+
+}
+#rightbox{
+	background:blue;
+}
