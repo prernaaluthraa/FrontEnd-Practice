@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	
+<body>
+
+
+<script>
+
+var i=0;
+	//setInterval(myFunction,1000);
+function myFunction() {
+  var str = "PrernaLuthra ";
+  if(i==str.length){
+  	i=0;
+  }
+  //for(i=0;i<=str.length;i++){
+  if(i<str.length){ 
+  var res = str.slice(0, i);
+  document.getElementById("mycontent").innerHTML=res;
+  i++;
+  setTimeout(myFunction,200);
+}
+
+//}
+}
+</script>
+<h1>Wowwwwoowo</h1>
+<hr/>
+<button onclick="myFunction()">Chal ho shuru</button>
+<br/>
+<br/><br/><br/>
+<div id="mycontent" style="color:purple;font-size:7.5em;text-shadow:5px 5px 5px whitesmoke;font-family: Trebuchet MS">
+
+</div>
+
+
+</body>
+</html>
