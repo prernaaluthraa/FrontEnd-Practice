@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="demo">
+</div>
+<script>
+var json={
+
+"images":[
+{"id":"1","name":"food","url":"food.jpg"},
+{"id":"2","name":"slam","url":"slam.jpg"},
+{"id":"3","name":"banner","url":"banner.jpg"},
+{"id":"4","name":"chitkara","url":"This-is-Chitkara.jpg"}
+]
+};
+for(a in json.images)
+{
+document.getElementById("demo").innerHTML+=json.images[a].id+"  "+json.images[a].name+"  "+"<img src='"+json.images[a].url+"'/>"+"<br/>";
+}
+</script>
+
+</body>
+</html>
