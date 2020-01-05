@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <title>SPORTS</title>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<ul>
+  <li><a href="gk.html"><i class="fas fa-bolt"style="font-size: 20px;"></i></a></li>
+  <li><a href="cricket.html">CRICKET</a></li>
+  <li><a href="football.html">FOOTBALL</a></li>
+  <li><a href="basketball.html">BASKETBALL</a></li>
+  <li><a href="tennis.html">TENNIS</a></li>
+  <li><a href="swimming.html">SWIMMING</a></li>
+  <li style="float: right"><a href="email.html">CONTACT US</a></li>
+</ul>
+<div>
+  <img class="Slides" src="basketball.jpg" style="max-width:100%">
+  <img class="Slides" src="cricket.jpg" style="max-width:100%">
+</div>
+<script>
+var myIndex = 0;
+slideshow();
+
+function slideshow() {
+  var i;
+  var x = document.getElementsByClassName("Slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(slideshow, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+</body>
+</html>

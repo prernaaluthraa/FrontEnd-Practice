@@ -1,0 +1,190 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SOS</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+
+    <section class="header" id="home">
+
+
+
+<nav>
+
+  <img src="sos3.png">
+
+  <ul>
+   <li><a href="cricket.html">CRICKET</a></li>
+  <li><a href="football.html">FOOTBALL</a></li>
+  <li><a href="basketball.html">BASKETBALL</a></li>
+  <li><a href="tennis.html">TENNIS</a></li>
+  </ul>
+</nav>
+
+
+
+                      <div class='quote-text'>
+                       <h1 id='quote'></h1>
+                        <p id='author'></p>
+                         </div>
+
+
+
+                            <script>
+                                var url="https://api.quotable.io/random";
+                                var xhr=new XMLHttpRequest()
+                                xhr.open('GET',url)
+                                xhr.onreadystatechange=getData
+                                function getData()
+                                {
+                                  var res_data=JSON.parse(this.responseText)
+                                  var a=res_data.content;
+                                  var b=res_data.author;
+                                  console.log(res_data);
+                                 var get_tag=document.getElementById('quote');
+                                  get_tag.innerHTML=a;
+                                  var get_tag1=document.getElementById('author');
+                                 get_tag1.innerHTML=b;
+                                 }
+                               xhr.send();
+                               </script>
+
+
+
+
+        </section>
+
+
+
+       <section class="gallery" id="gall">
+         <h1>Sports Gallery</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="gallery-box">
+
+
+              <a href="cricket.html"><img src="cricket.jpg"></a>
+              <h4>Cricket</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="gallery-box">
+
+
+              <a href="football.html"><img src="football.jpg"></a>
+              <h4>Football</h4>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="gallery-box">
+
+
+              <a href="basketball.html"><img src="basketball.jpg" height="170"></a>
+              <h4>Basketball</h4>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="gallery-box">
+
+
+              <a href="tennis.html"><img src="tennis.jpg" height="170"></a>
+              <h4>Tennis</h4>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+       </section>
+       <section class="users-feedback">
+         <h1>Users Review</h1>
+         <div class="container">
+           <div class="row">
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>With a focus on interface design, It strives to offer athletes the most intuitive online sports necessities. Their easy-to-navigate website makes everything quick and easy.</p>
+             <h5>Mary Kom</h5>
+             <small>India</small>
+            </div>
+            <img src="p4.jpg">
+          </div>
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>With a focus on interface design, It strives to offer athletes the most intuitive online sports necessities. Their easy-to-navigate website makes everything quick and easy.</p>
+             <h5>LeBron James</h5>
+             <small>United States</small>
+            </div>
+            <img src="p6.jpg">
+          </div>
+          <div class="col-md-4">
+            <div class="user-review">
+              <p>With a focus on interface design, It strives to offer athletes the most intuitive online sports necessities. Their easy-to-navigate website makes everything quick and easy.</p>
+             <h5>Serena Williams</h5>
+             <small>United States</small>
+            </div>
+            <img src="p1.jpg">
+          </div>
+           </div>
+
+         </div>
+       </section>
+
+
+
+
+<section class="footer" id="cont">
+  <div class="container">
+
+    <table border="0">
+
+      <col width="330">
+	<col width="330">
+	<col width="330">
+	<col width="330">
+      <tr>
+        <td style="transform: translate(-40px,20px);"><h1><i><b><font color="white">Contact:</font></b></i></h1>
+        </td>
+        <td>
+
+      <div class="col-md-3" style="padding-left:70px">
+        <a href="https://www.instagram.com/"><img src="instagram.png" class="logo"></a>
+      </div>
+    </td>
+    <td>
+      <div class="col-md-3" style="padding-left:220px">
+     <a href="https://www.linkedin.com/in"><img src="linkedin-sign.png" class="logo"></a>
+      </div>
+    </td>
+    <td>
+      <div class="col-md-3" style="padding-left:250px">
+      <a href="https://github.com/"><img src="github-logo.png" class="logo"></a>
+      </div>
+    </td>
+    <td>
+      <div class="col-md-3" style="padding-left:250px">
+     <a href="https://prernaaluthraa.github.io"><img src="resume.png" class="logo"></a>
+      </div>
+    </td>
+  </tr>
+
+
+
+    </table>
+  </div>
+</section>
+<div class="last">
+  <b>Made By</b> : <font color="white"> KUNAL SEHGAL</font>
+</div>
+
+
+  </body>
+</html>
